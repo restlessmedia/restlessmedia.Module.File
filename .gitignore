@@ -1,0 +1,7 @@
+src/bin
+src/obj
+src/bin
+src/obj
+.DS_Store
+.vs
+packages/**/*

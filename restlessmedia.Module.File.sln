@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restlessmedia.Module.File", "src\restlessmedia.Module.File.csproj", "{4BC9E63F-1012-46B6-B546-65930909C1B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BC9E63F-1012-46B6-B546-65930909C1B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC9E63F-1012-46B6-B546-65930909C1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC9E63F-1012-46B6-B546-65930909C1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC9E63F-1012-46B6-B546-65930909C1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+		SolutionGuid = {6494E390-2E4C-477A-9BFB-0FEE0D034A39}
+	EndGlobalSection
+EndGlobal
