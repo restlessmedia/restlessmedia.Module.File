@@ -1,0 +1,14 @@
+﻿using Autofac;
+using restlessmedia.Module.File.Configuration;
+
+namespace restlessmedia.Module.File
+{
+  public class Module : IModule
+  {
+    public void RegisterComponents(ContainerBuilder containerBuilder)
+    {
+      containerBuilder.RegisterType<FileSystemStorageProvider>().As<IDiskStorageProvider>().SingleInstance();
+      containerBuilder.RegisterSettings<IAzureSettings>("restlessmedia/license", required: true);
+    }
+  }
+}

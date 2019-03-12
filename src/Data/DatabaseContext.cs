@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace restlessmedia.Module.File.Data
 {
-  public class DatabaseContext : Module.Data.EF.DatabaseContext
+  public class DatabaseContext : restlessmedia.Module.Data.EF.DatabaseContext
   {
     public DatabaseContext(IDataContext dataContext, bool autoDetectChanges)
       : base(dataContext, autoDetectChanges)
