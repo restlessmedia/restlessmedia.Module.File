@@ -5,3 +5,5 @@ src/obj
 .DS_Store
 .vs
 packages/**/*
+restlessmedia.Module.File.UnitTest/bin
+restlessmedia.Module.File.UnitTest/obj
