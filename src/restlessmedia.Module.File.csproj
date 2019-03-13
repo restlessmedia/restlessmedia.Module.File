@@ -72,8 +72,8 @@
     <Reference Include="restlessmedia.Module, Version=0.16.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\restlessmedia.Module.0.16.0\lib\net452\restlessmedia.Module.dll</HintPath>
     </Reference>
-    <Reference Include="restlessmedia.Module.Data.EF, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\restlessmedia.Module.Data.EF.0.1.0\lib\net452\restlessmedia.Module.Data.EF.dll</HintPath>
+    <Reference Include="restlessmedia.Module.Data.EF, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\restlessmedia.Module.Data.EF.0.3.0\lib\net452\restlessmedia.Module.Data.EF.dll</HintPath>
     </Reference>
     <Reference Include="SqlBuilder, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlBuilder.1.10.0\lib\net452\SqlBuilder.dll</HintPath>
@@ -127,7 +127,7 @@
     <Compile Include="IDiskAccess.cs" />
     <Compile Include="IDiskStorageProvider.cs" />
     <Compile Include="IFile.cs" />
-    <Compile Include="IFileExtensions.cs" />
+    <Compile Include="Extensions\IFileExtensions.cs" />
     <Compile Include="IFileService.cs" />
     <Compile Include="IStorageProvider.cs" />
     <Compile Include="MimeExtensions.cs" />

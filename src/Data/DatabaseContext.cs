@@ -1,4 +1,5 @@
 ﻿using restlessmedia.Module.Data;
+using restlessmedia.Module.Data.EF;
 using System.Data.Entity;
 
 namespace restlessmedia.Module.File.Data
@@ -17,6 +18,13 @@ namespace restlessmedia.Module.File.Data
       {
         return Set<VEntityFile>();
       }
+    }
+
+    protected override void Configure(DbModelBuilder modelBuilder)
+    {
+      base.Configure(modelBuilder);
+
+      modelBuilder.Configurations.Add(new LicensedEntityConfiguration<VFile>());
     }
 
     private readonly IDataContext _dataContext;
