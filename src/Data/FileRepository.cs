@@ -9,7 +9,7 @@ using System.Data;
 
 namespace restlessmedia.Module.File.Data
 {
-  internal class FileRepository : LicensedEntityRepository<VFile>
+  public class FileRepository : LicensedEntityRepository<VFile>
   {
     public FileRepository(DatabaseContext context)
       : base(context)
