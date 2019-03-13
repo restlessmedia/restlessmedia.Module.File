@@ -8,6 +8,7 @@ namespace restlessmedia.Module.File
     public void RegisterComponents(ContainerBuilder containerBuilder)
     {
       containerBuilder.RegisterType<FileSystemStorageProvider>().As<IDiskStorageProvider>().SingleInstance();
+      containerBuilder.RegisterType<FileService>().As<IFileService>().SingleInstance();
       containerBuilder.RegisterSettings<IAzureSettings>("restlessmedia/license", required: true);
     }
   }
