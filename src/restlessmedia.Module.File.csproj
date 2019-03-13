@@ -98,6 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureStorageProvider.cs" />
+    <Compile Include="Configuration\AzureSettings.cs" />
+    <Compile Include="Configuration\AzureStorageSettings.cs" />
     <Compile Include="Configuration\DiskAccess.cs" />
     <Compile Include="Configuration\DiskAccessCollection.cs" />
     <Compile Include="Configuration\FileSettings.cs" />
