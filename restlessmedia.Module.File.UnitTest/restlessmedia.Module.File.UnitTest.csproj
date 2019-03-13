@@ -76,6 +76,9 @@
     <Reference Include="restlessmedia.Module, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\restlessmedia.Module.0.18.0\lib\net452\restlessmedia.Module.dll</HintPath>
     </Reference>
+    <Reference Include="Should, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Should.1.1.20\lib\Should.dll</HintPath>
+    </Reference>
     <Reference Include="SqlBuilder, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlBuilder.1.10.0\lib\net452\SqlBuilder.dll</HintPath>
     </Reference>
@@ -94,8 +97,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssertExtensions.cs" />
     <Compile Include="FileSqlDataProviderTests.cs" />
     <Compile Include="IntegrationTestConnetionFactory.cs" />
+    <Compile Include="MimeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
