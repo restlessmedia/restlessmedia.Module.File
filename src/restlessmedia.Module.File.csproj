@@ -115,8 +115,10 @@
     <Compile Include="Data\FileRepository.cs" />
     <Compile Include="Data\FileSqlDataProvider.cs" />
     <Compile Include="Data\IFileDataProvider.cs" />
+    <Compile Include="Data\IFileRepository.cs" />
     <Compile Include="Data\VEntityFile.cs" />
     <Compile Include="Data\VFile.cs" />
+    <Compile Include="DownloadStatus.cs" />
     <Compile Include="Extensions\AzureExtensions.cs" />
     <Compile Include="Extensions\IOExtensions.cs" />
     <Compile Include="FileEntity.cs" />
@@ -126,6 +128,7 @@
     <Compile Include="FileType.cs" />
     <Compile Include="IDiskAccess.cs" />
     <Compile Include="IDiskStorageProvider.cs" />
+    <Compile Include="IDownloadable.cs" />
     <Compile Include="IFile.cs" />
     <Compile Include="Extensions\IFileExtensions.cs" />
     <Compile Include="IFileService.cs" />
