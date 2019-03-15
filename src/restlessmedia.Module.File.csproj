@@ -115,7 +115,6 @@
     <Compile Include="Data\FileRepository.cs" />
     <Compile Include="Data\FileSqlDataProvider.cs" />
     <Compile Include="Data\IFileDataProvider.cs" />
-    <Compile Include="Data\IFileRepository.cs" />
     <Compile Include="Data\VEntityFile.cs" />
     <Compile Include="Data\VFile.cs" />
     <Compile Include="DownloadStatus.cs" />
