@@ -1,7 +1,9 @@
-﻿using restlessmedia.Module.File.Configuration;
+﻿using restlessmedia.Module.Extensions;
+using restlessmedia.Module.File.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace restlessmedia.Module.File
@@ -21,7 +23,7 @@ namespace restlessmedia.Module.File
     public virtual T Get<T>(string path, object name)
     {
       Stream stream;
-      
+
       if (Exists(path, name, out stream))
       {
         return Deserialize<T>(stream);
@@ -42,7 +44,7 @@ namespace restlessmedia.Module.File
 
     public virtual void Put<T>(string path, object name, T obj, string contentType = null)
     {
-      using(FileStream fileStream = System.IO.File.OpenWrite(GetPath(path, name)))
+      using (FileStream fileStream = System.IO.File.OpenWrite(GetPath(path, name)))
       {
         Serialize(obj).CopyTo(fileStream);
       }
@@ -177,10 +179,21 @@ namespace restlessmedia.Module.File
 
     private string GetPath(string path, object name)
     {
-      return string.Concat(path, name);
-    }
+      string nameAsString = name?.ToString();
 
-    private const AccessType DefaultAccessType = AccessType.Public;
+      // replace unsupported chars
+      if (!string.IsNullOrEmpty(nameAsString))
+      {
+        nameAsString = nameAsString.ReplaceAll(_fileSettings.FileNameCharacterBlackList, string.Empty);
+      }
+
+      if (_fileSettings.FileNameBlackList.Contains(nameAsString))
+      {
+        nameAsString = string.Join("_", nameAsString.Select(x => x));
+      }
+
+      return string.Concat(path, nameAsString);
+    }
 
     private readonly IFileSettings _fileSettings;
   }

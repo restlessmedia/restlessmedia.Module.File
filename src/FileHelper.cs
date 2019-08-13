@@ -1,7 +1,4 @@
-﻿using FastMember;
-using restlessmedia.Module.Attributes;
-using restlessmedia.Module.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -200,32 +197,7 @@ namespace restlessmedia.Module.File
     /// <param name="newLine"></param>
     public void WriteCSV<T>(IEnumerable<T> list, Stream stream, string separator = ",", string padChar = "\"", string newLine = "\r\n")
     {
-      IEnumerable<Member> members = AttributeHelper.Filter<T, IgnoreAttribute>(isDefined: false);
-
-      using (StreamWriter writer = new StreamWriter(stream))
-      {
-        // header row
-        writer.Write(string.Join(separator, members.Select(x => CsvFormat(x.Name, padChar, newLine)).ToArray()));
-        writer.Write(newLine);
-
-        // data rows
-        foreach (T obj in list)
-        {
-          ObjectAccessor objectAccessor = ObjectAccessor.Create(obj);
-          writer.Write(string.Join(separator, members.Select(x => CsvFormat(objectAccessor[x.Name], padChar, newLine)).ToArray()));
-          writer.Write(newLine);
-        }
-      }
-    }
-
-    private string CsvFormat(object value, string padChar, string newLine)
-    {
-      if (value == null)
-      {
-        return null;
-      }
-
-      return value.ToString().Replace(newLine, " ").Pad(padChar);
+      throw new NotImplementedException("Use CsvWriter instead");
     }
 	}
 }

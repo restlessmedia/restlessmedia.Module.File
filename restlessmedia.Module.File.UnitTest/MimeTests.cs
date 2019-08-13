@@ -1,24 +1,23 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using restlessmedia.Test;
 using Should;
 
 namespace restlessmedia.Module.File.UnitTest
 {
-  [TestClass]
   public class MimeTests
   {
-    [TestMethod]
+    [Fact]
     public void TestJpgExtensionWithoutPeriodReturnsJpgMimeType()
     {
-      Assert.AreEqual(MimeExtensions.GetMimeType("jpg"), "image/jpeg");
+      MimeExtensions.GetMimeType("jpg").MustBe("image/jpeg");
     }
 
-    [TestMethod]
+    [Fact]
     public void TestJpgExtensionWithPeriodReturnsJpgMimeType()
     {
-      Assert.AreEqual(MimeExtensions.GetMimeType(".jpg"), "image/jpeg");
+      MimeExtensions.GetMimeType(".jpg").MustBe("image/jpeg");
     }
 
-    [TestMethod]
+    [Fact]
     public void TestNonExistentExtensionReturnsNull()
     {
       MimeExtensions.GetMimeType("xxx").ShouldBeNull();

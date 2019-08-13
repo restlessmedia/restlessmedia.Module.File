@@ -1,12 +1,10 @@
 ﻿using FakeItEasy;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using restlessmedia.Module.Data;
 using restlessmedia.Module.File.Data;
 using System;
 
 namespace restlessmedia.Module.File.UnitTest
 {
-  [TestClass]
   public class FileSqlDataProviderTests
   {
     public FileSqlDataProviderTests()
@@ -18,7 +16,7 @@ namespace restlessmedia.Module.File.UnitTest
       A.CallTo(() => _dataContext.LicenseSettings.LicenseKey).Returns(new Guid(licenseKey));
     }
 
-    //[TestMethod]
+    //[Fact]
     public void Save_creates_record()
     {
       FileEntity file = new FileEntity
@@ -45,13 +43,13 @@ namespace restlessmedia.Module.File.UnitTest
       _dataProvider.Delete(fileEntity.FileId.Value);
     }
 
-    //[TestMethod]
+    //[Fact]
     public void list_files()
     {
       var list = _dataProvider.List(EntityType.Property, 21643);
     }
 
-    //[TestMethod]
+    //[Fact]
     public void read_file()
     {
       var file = _dataProvider.Read(35866);

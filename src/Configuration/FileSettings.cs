@@ -33,6 +33,22 @@ namespace restlessmedia.Module.File.Configuration
       }
     }
 
+    public string[] FileNameBlackList
+    {
+      get
+      {
+        return _fileNameBlackList;
+      }
+    }
+
+    public string[] FileNameCharacterBlackList
+    {
+      get
+      {
+        return _fileNameCharacterBlackList;
+      }
+    }
+
     /// <summary>
     /// Internal copy of file sizes.  We don't expose this to the app because of the dependency on System.Configuration
     /// </summary>
@@ -50,9 +66,48 @@ namespace restlessmedia.Module.File.Configuration
       get { return (DiskAccessCollection)this[_accessProperty]; }
     }
 
-    private const string _fileRootProperty = "fileRoot";
+    private static string[] _fileNameBlackList
+    {
+      get
+      {
+        return new[]
+        {
+          "AUX",
+          "CLOCK$",
+          "COM1",
+          "through",
+          "COM8",
+          "CON",
+          "CONFIG$",
+          "LPT1",
+          "LPT2",
+          "LPT3",
+          "LPT4",
+          "LPT5",
+          "LPT6",
+          "LPT7",
+          "LPT8",
+          "NUL",
+          "PRN",
+        };
+      }
+    }
 
-    private const string _logDirectoryProperty = "logDirectory";
+    private static string[] _fileNameCharacterBlackList
+    {
+      get
+      {
+        return new[]
+        {
+          ";",
+          "'",
+          "--",
+          "/*",
+          "*/",
+          "xp_",
+        };
+      }
+    }
 
     private const string _supportedExtensionsProperty = "supportedExtensions";
 
