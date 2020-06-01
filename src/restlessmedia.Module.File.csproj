@@ -4,13 +4,14 @@
     <AssemblyTitle>restlessmedia.Module.File</AssemblyTitle>
     <Product>restlessmedia.Module.File</Product>
     <Description>Module file library.</Description>
-    <Copyright>Copyright restlessmedia 2019</Copyright>
+    <Copyright>Copyright restlessmedia 2020</Copyright>
     <Version>2.0.1</Version>
     <AssemblyVersion>2.0.1</AssemblyVersion>
     <FileVersion>2.0.1</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Phil Cooper</Authors>
-    <PackageId>$title$</PackageId>
+    <PackageId>restlessmedia.Module.File</PackageId>
+    <Company>restlessmedia</Company>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
