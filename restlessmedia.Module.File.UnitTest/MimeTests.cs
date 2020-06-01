@@ -1,5 +1,6 @@
 ﻿using restlessmedia.Test;
 using Should;
+using Xunit;
 
 namespace restlessmedia.Module.File.UnitTest
 {

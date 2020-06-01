@@ -5,7 +5,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace restlessmedia.Module.File.Data
 {
-  public class DatabaseContext : restlessmedia.Module.Data.EF.DatabaseContext
+  internal class DatabaseContext : restlessmedia.Module.Data.EF.DatabaseContext
   {
     public DatabaseContext(IDataContext dataContext, bool autoDetectChanges)
       : base(dataContext, autoDetectChanges)

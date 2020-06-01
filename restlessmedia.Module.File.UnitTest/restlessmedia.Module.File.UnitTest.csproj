@@ -278,9 +278,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactAttribute.cs" />
     <Compile Include="FileSqlDataProviderTests.cs" />
-    <Compile Include="FileSystemStorageProviderTests.cs" />
     <Compile Include="IntegrationTestConnetionFactory.cs" />
     <Compile Include="MimeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
