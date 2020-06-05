@@ -1,10 +1,9 @@
-﻿using restlessmedia.Module.File;
-using System;
+﻿using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace restlessmedia.Business.Helper
+namespace restlessmedia.Module.File
 {
   public static class DownloadHelper
   {
