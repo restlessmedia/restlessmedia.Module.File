@@ -5,13 +5,10 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace restlessmedia.Module.File.Data
 {
-  internal class DatabaseContext : restlessmedia.Module.Data.EF.DatabaseContext
+  public class DatabaseContext : restlessmedia.Module.Data.EF.DatabaseContext
   {
     public DatabaseContext(IDataContext dataContext, bool autoDetectChanges)
-      : base(dataContext, autoDetectChanges)
-    {
-      _dataContext = dataContext;
-    }
+      : base(dataContext, autoDetectChanges) { }
 
     public DbSet<VEntityFile> EntityFile
     {
@@ -28,7 +25,5 @@ namespace restlessmedia.Module.File.Data
       modelBuilder.Configurations.Add(new LicensedEntityConfiguration<VFile>());
       modelBuilder.Configurations.Add(new EntityTypeConfiguration<VEntityFile>());
     }
-
-    private readonly IDataContext _dataContext;
   }
 }
