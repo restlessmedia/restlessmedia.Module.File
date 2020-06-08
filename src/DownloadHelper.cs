@@ -95,12 +95,12 @@ namespace restlessmedia.Module.File
       }
     }
 
+    public static Func<IWebClient> WebClientFactory = () => new SystemNetWebClient();
+
     private static IWebClient CreateWebClient()
     {
       ServicePointManager.DefaultConnectionLimit = 15;
       return WebClientFactory();
     }
-
-    internal static Func<IWebClient> WebClientFactory = () => new SystemNetWebClient();
   }
 }

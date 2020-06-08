@@ -5,7 +5,7 @@
     <Product>restlessmedia.Module.File</Product>
     <Description>Module file library.</Description>
     <Copyright>Copyright restlessmedia 2020</Copyright>
-    <Version>2.3.0</Version>
+    <Version>2.3.1</Version>
     <AssemblyVersion>2.1.0</AssemblyVersion>
     <FileVersion>2.1.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
