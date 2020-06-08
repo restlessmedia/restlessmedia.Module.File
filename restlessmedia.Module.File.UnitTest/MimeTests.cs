@@ -1,5 +1,4 @@
 ﻿using restlessmedia.Test;
-using Should;
 using Xunit;
 
 namespace restlessmedia.Module.File.UnitTest
@@ -21,7 +20,7 @@ namespace restlessmedia.Module.File.UnitTest
     [Fact]
     public void TestNonExistentExtensionReturnsNull()
     {
-      MimeExtensions.GetMimeType("xxx").ShouldBeNull();
+      MimeExtensions.GetMimeType("xxx").MustBeNull();
     }
   }
 }
