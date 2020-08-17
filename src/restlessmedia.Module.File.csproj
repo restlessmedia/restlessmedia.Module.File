@@ -5,9 +5,9 @@
     <Product>restlessmedia.Module.File</Product>
     <Description>Module file library.</Description>
     <Copyright>Copyright restlessmedia 2020</Copyright>
-    <Version>2.4.0</Version>
-    <AssemblyVersion>2.4.0</AssemblyVersion>
-    <FileVersion>2.4.0</FileVersion>
+    <Version>3.0.0</Version>
+    <AssemblyVersion>3.0.0</AssemblyVersion>
+    <FileVersion>3.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <Authors>Phil Cooper</Authors>
     <PackageId>restlessmedia.Module.File</PackageId>
@@ -19,6 +19,15 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="restlessmedia.Module.File.module" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="restlessmedia.Module.File.module">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
     <PackageReference Include="Autofac.Configuration" Version="5.1.0" />
@@ -44,7 +53,7 @@
     <PackageReference Include="Microsoft.WindowsAzure.ConfigurationManager" Version="2.0.3" />
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="restlessmedia.Module" Version="5.0.1" />
+    <PackageReference Include="restlessmedia.Module" Version="4.1.5" />
     <PackageReference Include="restlessmedia.Module.Data.EF" Version="1.1.0" />
     <PackageReference Include="SqlBuilder" Version="1.16.3" />
     <PackageReference Include="SqlBuilder.DataServices" Version="2.0.0" />
