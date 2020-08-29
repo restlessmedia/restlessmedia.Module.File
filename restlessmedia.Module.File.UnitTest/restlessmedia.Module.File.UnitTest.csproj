@@ -49,7 +49,7 @@
     <PackageReference Include="System.Buffers" Version="4.5.1" />
     <PackageReference Include="System.Collections" Version="4.3.0" />
     <PackageReference Include="System.Collections.Concurrent" Version="4.3.0" />
-    <PackageReference Include="System.Console" Version="4.3.1" />
+    <PackageReference Include="System.Console" Version="4.3.0" />
     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
     <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="5.0.0-preview.4.20251.6" />
     <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
@@ -80,7 +80,7 @@
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
     <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Numerics" Version="4.3.0" />
-    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
     <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
@@ -114,5 +114,6 @@
     <ProjectReference Include="..\src\restlessmedia.Module.File.csproj" />
   </ItemGroup>
 </Project>
+
 
 
