@@ -40,7 +40,7 @@
     <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
     <PackageReference Include="NETStandard.Library" Version="2.0.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="restlessmedia.Module" Version="7.0.3" />
+    <PackageReference Include="restlessmedia.Module" Version="7.0.4" />
     <PackageReference Include="restlessmedia.Module.Data.EF" Version="2.2.0" />
     <PackageReference Include="restlessmedia.Test" Version="1.0.0" />
     <PackageReference Include="SqlBuilder" Version="1.16.3" />
@@ -115,6 +115,7 @@
     <ProjectReference Include="..\src\restlessmedia.Module.File.csproj" />
   </ItemGroup>
 </Project>
+
 
 
 
