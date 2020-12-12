@@ -7,6 +7,7 @@ namespace restlessmedia.Module.File
   {
     None = 0,
     FloorPlan = 1,
-    Image = 2
+    Image = 2,
+    EPCGraph = 4,
   }
 }
